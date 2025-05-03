@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shafiqul Islam | Senior Software Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
   </head>
   <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed tracking-wide">
 
@@ -13,8 +15,10 @@
 <header class="bg-white shadow sticky top-0 z-50">
   <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
     <!-- Heading -->
-    <h1 class="text-xl font-bold">Shafiqul Islam</h1>
-
+    <!-- <h1 class="text-xl font-bold animate__animated animate__fadeInUp">Shafiqul Islam</h1> -->
+    <h2 class="text-xl font-extrabold mb-4">
+      <span id="typed-title"></span>
+    </h2>
     <!-- Navigation and Toggle -->
     <div class="flex items-center space-x-4">
       <!-- Desktop Nav -->
@@ -162,4 +166,22 @@
       © 2025 Shafiqul Islam. All rights reserved.
     </footer>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new Typed('#typed-title', {
+        strings: [
+          '<span class="text-black-400">Shafiqul Islam</span>',
+          '<span class="text-blue-400">Senior Software Engineer</span>',
+        ],
+        typeSpeed: 50,
+        backSpeed: 30,
+        backDelay: 1500,
+        loop: true,
+        smartBackspace: true,
+      });
+    });
+  </script>
+  
+
 </html>
